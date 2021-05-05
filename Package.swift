@@ -5,24 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "ThePerfectApp",
-    products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "ThePerfectApp",
-            targets: ["ThePerfectApp"]),
-    ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
+    products: [.library(name: "ThePerfectApp", targets: ["ThePerfectApp"])],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
+        .binaryTarget(
             name: "ThePerfectApp",
-            dependencies: []),
-        .testTarget(
-            name: "ThePerfectAppTests",
-            dependencies: ["ThePerfectApp"]),
+            url: "https://github.com/mark-shape/ThePerfectApp/raw/main/ThePerfectApp.xcframework.zip",
+            checksum: "26f6bc5c172e58303de6a4ee96c5e3d9d54cb47105d8539667d16b8e17eb9451"
+        )
     ]
 )
