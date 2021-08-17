@@ -1,3 +1,3 @@
 # ThePerfectApp
 
-A description of this package.
+Swift package with the ThePerfectApp iOS integration framework 
