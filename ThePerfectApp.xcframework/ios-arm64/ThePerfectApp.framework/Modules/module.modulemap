@@ -1,0 +1,6 @@
+framework module ThePerfectApp {
+  umbrella header "ThePerfectApp.h"
+
+  export *
+  module * { export * }
+}
