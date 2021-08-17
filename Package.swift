@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "ThePerfectApp",
-    platforms: [.iOS(.v11), .tvOS(.v11)],
+    platforms: [.iOS(.v9), .tvOS(.v9)],
     products: [.library(name: "ThePerfectApp", targets: ["ThePerfectApp"])],
     targets: [
         .binaryTarget(
